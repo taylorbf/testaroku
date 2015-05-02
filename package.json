@@ -4,19 +4,22 @@
   "description": "boss collaborative space game",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node ."
   //  "postinstall": "npm install && bower install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbf/testaroku.git"
+    "url": "https://github.com/taylorbf/testaroku"
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jacobdlewis/space_race/issues"
+    "url": "https://github.com/taylorbf/testaroku/issues"
   },
-  "homepage": "https://github.com/jacobdlewis/space_race",
+  "homepage": "https://github.com/taylorbf/testaroku",
   "dependencies": {
     "bower": "^1.3.12",
     "express": "4.12.x",
