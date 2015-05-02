@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en-US">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Space Race</title>
+  </head>
+
+    <body>
+    <script src="../node_modules/tone/build/tone.js"></script>
+
+
+    <script>
+
+        //create one of Tone's built-in synthesizers
+        var synth = new Tone.AMSynth();
+        synth.harmonicity = 0
+        //synth.oscillator = new Tone.Oscillator(440, "sine");
+
+        //connect the synth to the master output channel
+        synth.toMaster();
+        var note = 20;
+        //create a callback which is invoked every quarter note
+        Tone.Transport.setInterval(function(time){
+            //trigger middle C for the duration of an 8th note
+            
+            note += 200;
+            note = note % 1800;
+            synth.triggerAttackRelease(note, 2, time);
+        }, 0.3);
+
+        //start the transport
+        Tone.Transport.start();
+
+
+    </script>
+
+
+
+
+
+
+    </body>
+
+</html>
