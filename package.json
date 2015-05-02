@@ -4,8 +4,8 @@
   "description": "boss collaborative space game",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "npm install && bower install"
+    "start": "node server.js"
+  //  "postinstall": "npm install && bower install"
   },
   "repository": {
     "type": "git",
