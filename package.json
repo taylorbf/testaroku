@@ -4,7 +4,8 @@
   "description": "boss collaborative space game",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "bower install phaser"
   },
   "repository": {
     "type": "git",
