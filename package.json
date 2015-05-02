@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "start": "node ."
-  //  "postinstall": "npm install && bower install"
   },
   "repository": {
     "type": "git",
