@@ -1,8 +1,10 @@
+
 var express = require('express')
   , app = express(app)
   , server = require('http').createServer(app);
 
 // serve static files from the current directory
+app.set('port', (process.env.PORT || 8000));
 app.use(express.static(__dirname+"/public"));
 app.get('/', function(req, res){
   res.sendFile(__dirname+'/index.html');
@@ -72,4 +74,4 @@ eurecaServer.exports.handleKeys = function (keys) {
         clients[c].laststate = keys;
     }
 }
-server.listen(80);
+server.listen(process.env.PORT || 8000);
